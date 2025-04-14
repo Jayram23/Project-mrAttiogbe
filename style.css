@@ -1,0 +1,854 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+ 
+  
+/* RESET de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.logo a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: 0.6s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.titre {
+    background: url('./photo plage.jpg');
+    opacity: 0,6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.titre h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.titre p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bouton {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.find-trip {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    position: absolute;
+    bottom: 30px;
+    
+}
+
+.find-trip form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #fff;
+    bottom:  0px;
+}
+
+.find-trip form div,
+.find-trip form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.find-trip form label {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.find-trip form input {
+    padding: 8px 10px;
+    background-color: gainsboro;
+    border: 1px solid aquamarine;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+}
+
+.find-trip form input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.5s;
+    margin-top: 24px;
+}
+
+.find-trip form input[type="submit"]:hover {
+    box-shadow: 0 0 10px aqua;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section service */
+#service {
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 70px 0;
+    font-weight: bold;
+    color: midnightblue;
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 150%;
+    background-color: #000;
+    width: 5px;
+}
+
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-desc .left {
+    position: relative;
+    margin: 10px 30px 50px 10px;
+    height: 250px;
+    flex: 1 1 300px;
+}
+
+.img-desc .left video {
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.img-desc .left::after {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-desc .right {
+    width: 70%;
+    flex: 1 1 400px;
+}
+
+.img-desc .right h3 {
+    color: #000;
+    font-size: 25px;
+}
+
+.img-desc .right p {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 36px;
+}
+
+.img-desc .right a {
+    border: 1px solid orange;
+    color: #000;
+    background-color: orange;
+    font-size: 14px;
+    padding: 8px 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Section Destinations Populaires */
+#popular-destination {
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.box:hover .content {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.box .content h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.box .content p:nth-child(3) {
+    margin-bottom: 2px;
+}
+
+.box .content a {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box .content a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+.box{
+    border-radius: 10px;
+}
+
+/* Section Offres */
+#offre {
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+#offre .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+#offre .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#offre .content .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#offre .content .box:hover img {
+    transform: scale(1.1);
+}
+
+#offre .content .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box .offre-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#offre .content .box:hover .offre-content {
+    opacity: 1;
+}
+
+/* Section Hôtels */
+#hotels {
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    background-color: #f8f9fa;
+}
+
+#hotels .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+}
+
+#hotels .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    justify-items: center;
+}
+
+#hotels .content .box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    background-color: #fff;
+}
+ 
+#hotels .content .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+#hotels .content .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+#hotels .content .box:hover img {
+    transform: scale(1.1);
+}
+
+.hotel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#hotels .content .box:hover .hotel-content {
+    opacity: 1;
+}
+/*reservation*/
+/* Styles pour le formulaire de réservation */
+.reservation {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.reservation h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: midnightblue;
+}
+
+.reservation label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.reservation input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.reservation input:focus {
+    border-color:black;
+}
+
+.reservation button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation button:hover {
+    background-color: red;
+}
+
+.reservation span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation {
+        padding: 15px;
+    }
+
+    .reservation h1 {
+        font-size: 1.5rem;
+    }
+
+    .reservation input,
+    .reservation button {
+        font-size: 0.9rem;
+    }
+}
+/* ========================= */
+/*       RESPONSIVE CSS      */
+/* ========================= */
+
+@media (max-width: 1024px) {
+    .img-desc {
+        flex-direction: column;
+    }
+
+    .img-desc .left,
+    .img-desc .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-desc .right {
+        margin-top: 20px;
+    }
+
+    #popular-destination .content,
+    #offre .content,
+    #hotels .content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 16px;
+        margin: 50px 10px;
+    }
+
+    .img-desc .right h3 {
+        font-size: 20px;
+    }
+
+    .img-desc .right p,
+    .img-desc .right a {
+        font-size: 13px;
+    }
+
+    .box .content h4 {
+        font-size: 20px;
+    }
+
+    .box .content p {
+        font-size: 11px;
+    }
+
+    .box .content a {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .hotel-content h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo a {
+        font-size: 20px;
+    }
+
+    .img-desc .right h3 {
+        font-size: 18px;
+    }
+
+    .img-desc .right p {
+        font-size: 12px;
+    }
+
+    .img-desc .right a {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .box .content a {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    #hotels .title {
+        font-size: 1.5rem;
+    }
+
+    .hotel-content h2 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+/* ========== RESPONSIVE INDEX PAGE ========== */
+
+@media (max-width: 1024px) {
+    header .principal {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    .logo ul {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .logo ul li {
+      display: inline-block;
+      margin: 10px 10px;
+    }
+  
+    .titre {
+      padding: 50px 20px;
+      text-align: center;
+    }
+  
+    .titre h2 {
+      font-size: 28px;
+    }
+  
+    .titre p {
+      font-size: 16px;
+    }
+  
+    .bouton {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .bouton a.btn {
+      display: inline-block;
+      margin: 5px 0;
+    }
+  
+    .find-trip form {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .find-trip form div {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .titre h2 {
+      font-size: 24px;
+    }
+  
+    .titre p {
+      font-size: 15px;
+    }
+  
+    .find-trip form div {
+      width: 100%;
+    }
+  
+    .find-trip input[type="submit"] {
+      width: 100%;
+    }
+  
+    .logo ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header .logo a {
+      font-size: 22px;
+    }
+  
+    .titre h2 {
+      font-size: 20px;
+    }
+  
+    .titre p {
+      font-size: 14px;
+    }
+  
+    .bouton {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .find-trip {
+      padding: 10px;
+    }
+  
+    .find-trip form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    footer p {
+      font-size: 13px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  /* ========== Responsive Design ========== */
+@media screen and (max-width: 992px) {
+    .find-trip form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .find-trip form div,
+    .find-trip form input[type="submit"] {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .titre h2 {
+        font-size: 32px;
+    }
+
+    .titre p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .titre {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bouton {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titre h2 {
+        font-size: 24px;
+    }
+
+    .titre p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+
+
+
